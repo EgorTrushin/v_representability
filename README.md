@@ -3,7 +3,7 @@
 This repository contains the analysis of data and the preparation of tables and figures for the following publication:
 
 - E. Trushin, J. Erhard and A. Görling. Violations of the v-representability condition underlying Kohn-Sham density-functional theory - Phys. Rev. A 110 L020802 (2024) https://doi.org/10.1103/PhysRevA.110.L020802
-    - Click to see corresponding [Jupyter Notebook](https://github.com/EgorTrushin/supplementary-materials/blob/main/vrepr_violation/vrepr-violation.ipynb)
+    - Click to see corresponding [Jupyter Notebook](https://github.com/EgorTrushin/supplementary-materials/vrepr_violation/vrepr-violation.ipynb)
     - Zenodo repository: [http://doi.org/10.5281/zenodo.8226492](http://doi.org/10.5281/zenodo.12772192)
 
 ---
@@ -26,4 +26,4 @@ Script [gen_inputs.py](https://github.com/EgorTrushin/v_representability/gen_inp
 
 Notebook [process_raw_outputs.ipynb](https://github.com/EgorTrushin/v_representability/blob/main/process_raw_outputs.ipynb) processes Molpro output files. Processed data are stored in Python-friendly formats. Data inspection is also performed.
 
-Notebook [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/blob/main/vrepr-violation.ipynb) generates tables and figures, i.e., provides analytics. [vrepr-violation.html](https://github.com/EgorTrushin/vrepr-violation/blob/main/vrepr-violation.html) contains only output of [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/vrepr-violation.ipynb), i.e., cells with codes are absent.
+Notebook [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/vrepr-violation.ipynb) generates tables and figures, i.e., provides analytics. [vrepr-violation.html](https://github.com/EgorTrushin/v_representability/vrepr-violation.html) contains only output of [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/vrepr-violation.ipynb), i.e., cells with codes are absent.
