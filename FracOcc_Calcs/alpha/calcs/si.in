@@ -1,0 +1,21 @@
+basis={
+default,aug-cc-pwCV5Z ! orbital basis
+set,oep;default,aug-cc-pVTZ/mp2fit ! OEP basis
+}
+
+symmetry,nosym ! USCEXX does not use symmetry
+
+angstrom
+geometry={
+1
+
+Si 0.0 0.0 0.0
+
+}
+
+charge=0
+spin=2
+
+df-uhf,maxit=0
+
+acfd;uscexx,dfit=0,spin_sym=1,thr_fai_oep=5d-3,vhoep=1,fracocc=1,system='Si'

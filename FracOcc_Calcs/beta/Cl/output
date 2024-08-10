@@ -1,0 +1,475 @@
+
+ Working directory              : /tmp/trushin/molpro.ElOgm6eJb0/
+ Global scratch directory       : /tmp/trushin/molpro.ElOgm6eJb0/
+ Wavefunction directory         : /home/trushin/wfu/
+ Main file repository           : /tmp/trushin/molpro.ElOgm6eJb0/
+
+ id        : chemie
+
+ Nodes     nprocs
+ trushin      1
+ GA implementation: MPI file
+ GA implementation (serial work in mppx): MPI file
+
+ Using customized tuning parameters: mindgm=1; mindgv=20; mindgc=4; mindgr=1; noblas=0; minvec=7
+ default implementation of scratch files=df  
+
+
+ Variables initialized (1042), CPU time= 0.00 sec
+ basis={
+ default,aug-cc-pwCV5Z                                                           ! orbital basis
+ set,oep;default,aug-cc-pVDZ/mp2fit                                              ! OEP basis
+ }
+ 
+ symmetry,nosym                                                                  ! USCEXX does not use symmetry
+ 
+ angstrom
+ geometry={
+ 1
+ Cl    0.0000000    0.0000000   0.000000
+ }
+ 
+ charge=0
+ spin=1
+ 
+ df-uhf,maxit=0
+ 
+ acfd;uscexx,dfit=0,spin_sym=1,thr_fai_oep=5d-3,vhoep=1,fracocc=1,system='Cl',swap2=1,iswap1=7,iswap2=9
+ Commands initialized (847), CPU time= 0.01 sec, 718 directives.
+ Default parameters read. Elapsed time= 0.06 sec
+
+ Checking input...
+ Passed
+1
+
+
+                                         ***  PROGRAM SYSTEM MOLPRO  ***
+                                       Copyright, TTI GmbH Stuttgart, 2015
+                                    Version 2023.3 linked Fri Dec  8 19:03:20 2023
+
+
+ **********************************************************************************************************************************
+ LABEL *                                                                                                                                                                 
+  (16 PROC) 64 bit serial version                                                        DATE: 21-Apr-24          TIME: 18:55:18  
+ **********************************************************************************************************************************
+
+ SHA1:             da2376a17dd2bbf3f86419769cf86a3f99a84502
+ **********************************************************************************************************************************
+
+ Memory per process:      2000 MW
+ Total memory per node:   2000 MW
+
+ GA preallocation disabled
+ GA check disabled
+
+ Variable memory set to 2000.0 MW
+
+ SETTING BASIS          =    AUG-CC-PWCV5Z
+ ZSYMEL=NOSYM
+ ZUNIT=ANG
+
+
+ Geometry recognized as XYZ
+
+ SETTING CHARGE         =      0.0000000D+00                                  
+ SETTING SPIN           =         1.00000000                                  
+
+
+ Recomputing integrals since basis changed
+
+
+ Using spherical harmonics
+
+ Library entry CL     S aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     P aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     D aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     F aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     G aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     H aug-cc-pwCV5Z        selected for orbital group  1
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Atom
+ Rotational constants:       0.0000000      0.0000000      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  CL     17.00    0.000000000    0.000000000    0.000000000
+
+ NUCLEAR CHARGE:                   17
+ NUMBER OF PRIMITIVE AOS:         322
+ NUMBER OF SYMMETRY AOS:          232
+ NUMBER OF CONTRACTIONS:          217   (  217A   )
+ NUMBER OF INNER CORE ORBITALS:     1   (    1A   )
+ NUMBER OF OUTER CORE ORBITALS:     4   (    4A   )
+ NUMBER OF VALENCE ORBITALS:        4   (    4A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.00000000
+
+
+ Library entry CL     S aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     P aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     D aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     F aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Basis set:    OEP
+ Basis size:    92
+ Sphericals:   T
+
+ **********************************************************************************************************************************
+
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 1 1 1 1 1 1 1   1 1 2 3 4 2 3 4 2 3   4 2 3 4 2 3 4 2 3 4   2 3 4 2 3 4 2 3 4 2
+                                        3 4 2 3 4 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9
+                                        5 6 7 8 9 5 6 7 8 9  10111213141516101112  13141516101112131415  16101112131415161011
+                                       12131415161011121314  15161011121314151617  18192021222324251718  19202122232425171819
+                                       20212223242517181920  21222324251718192021  22232425262728293031  32333435362627282930
+                                       31323334353626272829  30313233343536
+
+ Eigenvalues of metric
+
+         1 0.315E-05 0.392E-04 0.392E-04 0.392E-04 0.409E-03 0.210E-02 0.417E-02 0.417E-02
+
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       30.30       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+ PROGRAMS   *        TOTAL       INT
+ CPU TIMES  *         0.36      0.25
+ REAL TIME  *         1.80 SEC
+ DISK USED  *        30.69 MB
+ **********************************************************************************************************************************
+
+
+ Program * Unrestricted Hartree-Fock
+
+ Basis set AWCV5Z/JKFIT generated.       Number of basis functions:   230 
+ Coulomb and exchange fitting
+ Thresholds for fitting:       THRAO_COUL= 1.0D-15    THRAO_EXCH= 1.0D-13    THRMO= 1.0D-12    THRPROD= 1.0D-12    THRASM= 1.0D-12
+                               THR2HLF=    1.0D-12
+
+ Basis set AWCV5Z-JKFIT loaded. Number of basis functions: 230
+
+ Orbital guess generated from atomic densities.
+ Using density fitting in orbital guess
+
+
+ Initial alpha occupancy:   9
+ Initial beta  occupancy:   8
+
+ Elapsed time for starting guess:      0.23 sec
+
+ NELEC=   17   SYM=1   MS2=1   THRE=1.0D-08   THRD=3.2D-06   THRG=3.2D-06  HFMA2=F  DIIS_START=2   DIIS_MAX=10   DIIS_INCORE=F
+
+ Initial level shifts:    0.20 (ALPHA)    0.20 (BETA)
+
+ ITER         ETOT            DE          GRAD         DDIFF    DIIS  NEXP   TIME(IT)  TIME(TOT)  DIAG
+   1   -459.48066615  -459.48066615     0.00D+00     0.00D+00     0     0       0.39      0.62    start
+
+ Orbitals not optimized (maxit=1)
+
+ Final alpha occupancy:   9
+ Final beta  occupancy:   8
+
+ !UHF STATE 1.1 Energy               -459.480666150050
+  UHF One-electron energy            -634.397131023259
+  UHF Two-electron energy             174.916464873210
+  UHF Kinetic energy                  459.194872798351
+  UHF Nuclear energy                    0.000000000000
+  UHF Virial quotient                  -1.000622379231
+
+ !UHF STATE 1.1 Dipole moment          -0.00000000    -0.00000000    -0.00000000
+ Dipole moment /Debye                  -0.00000000    -0.00000000    -0.00000000
+
+ EXPECTATION VALUE OF S**2:             0.75000000
+
+ Orbital energies for positive spin:
+
+           1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+   -104.894220   -10.614952    -8.081259    -8.081259    -8.081259    -1.054098    -0.435177    -0.435177    -0.435177     0.085819
+
+          11.1
+      0.085819
+
+ Orbital energies for negative spin:
+
+           1.1          2.1          3.1          4.1          5.1          6.1          7.1          8.1          9.1         10.1
+   -104.894220   -10.614952    -8.081259    -8.081259    -8.081259    -1.054098    -0.435177    -0.435177    -0.435177     0.085819
+
+
+ HOMO     -8.1    -0.435177 =     -11.8418eV
+ LUMO     -9.1    -0.435177 =     -11.8418eV
+ LUMO-HOMO         0.000000 =       0.0000eV
+
+ Orbitals saved in record  2200.2
+
+ Occupation number threshold for pseudo-canonical orbitals: 1.9990 (occupied), 0.0010 (virtual)
+
+ Number of pseudo-canonical occupied orbitals per symmetry:    8
+ Number of active natural orbitals per symmetry:               1
+
+ Natural orbitals saved to record    2200.2 (Orbital set 3)
+
+ Orbital spaces for UNO-CAS (Min. occupation: 0.020  Max. occupation: 1.980):
+
+ Closed:        8
+ Active:        1
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      18       30.30       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    OPER   
+
+              2       4        2.23       700     1000      520     2200   
+                                         GEOM     BASIS   MCVARS     UHF  
+
+ PROGRAMS   *        TOTAL    DF-UHF       INT
+ CPU TIMES  *         1.16      0.81      0.25
+ REAL TIME  *         2.42 SEC
+ DISK USED  *        37.22 MB
+ **********************************************************************************************************************************
+
+
+ Using spherical harmonics
+
+ Library entry CL     S aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     P aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     D aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     F aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     G aug-cc-pwCV5Z        selected for orbital group  1
+ Library entry CL     H aug-cc-pwCV5Z        selected for orbital group  1
+
+
+ PROGRAM * SEWARD (Integral evaluation for generally contracted gaussian basis sets)     Author: Roland Lindh, 1990
+
+ Geometry written to block  1 of record 700
+
+ Orientation using atomic masses  
+ Molecule type: Atom
+ Rotational constants:       0.0000000      0.0000000      0.0000000 GHz  (calculated with average atomic masses)
+
+ Point group  C1  
+
+
+
+ ATOMIC COORDINATES
+
+ NR  ATOM    CHARGE       X              Y              Z
+
+   1  CL     17.00    0.000000000    0.000000000    0.000000000
+
+ NUCLEAR CHARGE:                   17
+ NUMBER OF PRIMITIVE AOS:         322
+ NUMBER OF SYMMETRY AOS:          232
+ NUMBER OF CONTRACTIONS:          217   (  217A   )
+ NUMBER OF INNER CORE ORBITALS:     1   (    1A   )
+ NUMBER OF OUTER CORE ORBITALS:     4   (    4A   )
+ NUMBER OF VALENCE ORBITALS:        4   (    4A   )
+
+
+ NUCLEAR REPULSION ENERGY    0.00000000
+
+ Library entry CL     S aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     P aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     D aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Library entry CL     F aug-cc-pVDZ-MP2F     selected for OEP group  1
+ Basis set:    OEP
+ Basis size:    92
+ Sphericals:   T
+ EXTRA SYMMETRY OF AOS IN SYMMETRY 1:   1 1 1 1 1 1 1 1 1 1   1 1 2 3 4 2 3 4 2 3   4 2 3 4 2 3 4 2 3 4   2 3 4 2 3 4 2 3 4 2
+                                        3 4 2 3 4 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9   5 6 7 8 9 5 6 7 8 9
+                                        5 6 7 8 9 5 6 7 8 9  10111213141516101112  13141516101112131415  16101112131415161011
+                                       12131415161011121314  15161011121314151617  18192021222324251718  19202122232425171819
+                                       20212223242517181920  21222324251718192021  22232425262728293031  32333435362627282930
+                                       31323334353626272829  30313233343536
+
+ Eigenvalues of metric
+
+         1 0.315E-05 0.392E-04 0.392E-04 0.392E-04 0.409E-03 0.210E-02 0.417E-02 0.417E-02
+
+
+ Contracted 2-electron integrals neglected if value below      1.0D-12
+ AO integral compression algorithm  1   Integral accuracy      1.0D-12
+
+     263.193 MB (compressed) written to integral file ( 13.6%)
+
+
+ NUMBER OF SORTED TWO-ELECTRON INTEGRALS:  279744031.     BUFFER LENGTH:  32768
+ NUMBER OF SEGMENTS:  18  SEGMENT LENGTH:   15999762      RECORD LENGTH: 524288
+
+ Memory used in sort:      16.56 MW
+
+ SORT1 READ   241177324. AND WROTE    24676897. INTEGRALS IN     83 RECORDS. CPU TIME:     0.62 SEC, REAL TIME:     1.01 SEC
+ SORT2 READ    24676897. AND WROTE   279744031. INTEGRALS IN   1004 RECORDS. CPU TIME:     1.33 SEC, REAL TIME:     1.56 SEC
+
+ FILE SIZES:   FILE 1:   295.0 MBYTE,  FILE 4:   348.2 MBYTE,   TOTAL:    643.2 MBYTE
+
+ OPERATOR DM      FOR CENTER  0  COORDINATES:    0.000000    0.000000    0.000000
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19      178.82       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       4        2.23       700     1000      520     2200   
+                                         GEOM     BASIS   MCVARS     UHF  
+
+ PROGRAMS   *        TOTAL       INT    DF-UHF       INT
+ CPU TIMES  *        12.03     10.87      0.81      0.25
+ REAL TIME  *        14.40 SEC
+ DISK USED  *       615.69 MB
+ **********************************************************************************************************************************
+
+
+ PROGRAM * USCEXX      (unrestricted self-consistent exact-exchange)
+
+ Authors:
+ A. Hesselmann, P. Bleiziffer, D. Schmidtel, J. Erhard, A. Thierbach, E. Trushin
+
+ Read Orbital Records from 2200.2
+ Write Orbital Records to 2201.2
+ Use density fitting to evaluate the Coulomb and exchange integrals: F
+ Maximum number of iterations:  30
+ Minimum number of iterations:   3
+ DIIS is used:
+ Maximum size of DIIS matrix:  10
+ Threshold for energy convergence:   1.000E-08
+ Threshold for density convergence:   0.000E+00
+ Thresholds for processing of OEP basis set:
+ thr_symmetry:   0.000E+00
+ thr_overlap_oep:     1.000E-99
+ thr_fai_oep:     5.000E-03
+ Threshold for eigenvalue difference in calculation of Lambda:    1.000E-06
+ Threshold for eigenproblem solver of OEP equation:    1.000E-99
+ Solver for eigenproblems: GTSVD
+ Spin-symmetrization: T
+ Constucting Hartree potential in OEP basis: T
+ Fermi-Amaldi as reference potential: T
+ HOMO condition: F
+ The same reference potential for alpha and beta: F
+ l_swap: F
+ l_swap2: T
+ l_frac_occ: T
+ system: Cl                              
+
+ Molecular orbitals read from record     2200.2  Type=UHF/ALPHA  
+ Orbital energies read from record       2200.2  Type=UHF/ALPHA  
+ Density matrix read from record         2200.2  Type=UHF/CHARGE  
+ Molecular orbitals read from record     2200.2  Type=UHF/BETA  
+ Orbital energies read from record       2200.2  Type=UHF/BETA  
+ Density matrix read from record         2200.2  Type=UHF/SPIN  
+ Occupation numbers read from record     2200.2  Type=UHF/UHF  
+ Occupation numbers read from record     2200.2  Type=UHF/UHF  
+
+   ITER        ENERGY            EDIFF       DDIFF       DIIS         TIME
+     0     -459.4806668448                                            5.05
+     0     -459.4806668448                                           10.11
+     1     -459.4738223165     0.684E-02   0.208E-02      1          38.46
+     1     -459.4751919533     0.547E-02   0.208E-02      1          43.52
+     2     -459.4747147764     0.477E-03   0.453E-03      2          72.50
+     2     -459.4755101949    -0.318E-03   0.453E-03      2          77.64
+     3     -459.4750875453     0.423E-03   0.202E-03      3         106.65
+     3     -459.4760437205    -0.534E-03   0.202E-03      3         111.72
+     4     -459.4750578111     0.986E-03   0.607E-05      4         140.71
+     4     -459.4760408197     0.290E-05   0.607E-05      4         145.82
+     5     -459.4750623179     0.979E-03   0.280E-05      4         174.20
+     5     -459.4760414904    -0.671E-06   0.280E-05      4         179.26
+     6     -459.4750625123     0.979E-03   0.530E-07      4         207.58
+     6     -459.4760414973    -0.688E-08   0.530E-07      4         212.60
+
+ SCF converged in     6 iterations
+
+ USCEXX orbitals written to record    2201.2
+ 
+ !USCEXX Total energy                -459.476041497267
+  USCEXX One-electron energy         -634.875789178836
+  USCEXX Two-electron energy          175.399747681569
+  USCEXX Nuclear energy                 0.000000000000
+  USCEXX Coulomb energy               202.921527473488
+  USCEXX Exchange energy              -27.521779791919
+ 
+ !USCEXX Dipole moment                  0.00000000    -0.00000000     0.00000000
+ Dipole moment /Debye                   0.00000000    -0.00000000     0.00000000
+
+ EXPECTATION VALUE OF S**2:             0.75000000
+
+ USCEXX eigenvalues (alpha)
+   1-  10  -0.10094E+03 -0.94612E+01 -0.72477E+01 -0.72477E+01 -0.72398E+01 -0.89904E+00 -0.46201E+00 -0.46201E+00 -0.45513E+00 -0.11488E+00
+  11-  19  -0.78098E-01 -0.74264E-01 -0.74264E-01  0.13224E-01  0.13534E-01  0.13534E-01  0.14648E-01  0.14648E-01  0.15580E+00
+
+ HOMO (alpha): -0.45513E+00
+ LUMO (alpha): -0.11488E+00
+ LUMO-HOMO (alpha):  0.34026E+00
+
+ USCEXX eigenvalues (beta)
+   1-  10  -0.10094E+03 -0.94612E+01 -0.72477E+01 -0.72477E+01 -0.72398E+01 -0.89904E+00 -0.46201E+00 -0.46201E+00 -0.45513E+00 -0.11488E+00
+  11-  19  -0.78098E-01 -0.74264E-01 -0.74264E-01  0.13224E-01  0.13534E-01  0.13534E-01  0.14648E-01  0.14648E-01  0.15580E+00
+
+ HOMO (beta): -0.46201E+00
+ LUMO (beta): -0.45513E+00
+ LUMO-HOMO (beta):  0.68743E-02
+
+ USCEXX occupation numbers (alpha)
+   1-  10   0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.00000E+00
+  11-  19   0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00
+
+
+ USCEXX occupation numbers (beta)
+   1-  10   0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01  0.50000E+00  0.50000E+00  0.10000E+01  0.00000E+00
+  11-  19   0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00  0.00000E+00
+
+ 
+ !USCEXX Total energy                -459.476041497267
+  USCEXX One-electron energy         -634.875789178836
+  USCEXX Two-electron energy          175.399747681569
+  USCEXX Nuclear energy                 0.000000000000
+  USCEXX Coulomb energy               202.921527473488
+  USCEXX Exchange energy              -27.521779791919
+
+
+ **********************************************************************************************************************************
+ DATASETS  * FILE   NREC   LENGTH (MB)   RECORD NAMES
+              1      19      178.82       500      610      700      900      950      970     1000      129      960     1100   
+                                          VAR    BASINP    GEOM    SYMINP    ZMAT    AOBASIS   BASIS     P2S    ABASIS      S 
+                                         1400     1410     1200     1210     1080     1600     1650     1300     1700   
+                                           T        V       H0       H01     AOSYM     SMH    MOLCAS    ERIS     OPER   
+
+              2       5        4.31       700     1000      520     2200     2201   
+                                         GEOM     BASIS   MCVARS     UHF    USCEXX    
+
+              4       4       10.53      2900     3000     3100     3200   
+
+ PROGRAMS   *        TOTAL      ACFD       INT    DF-UHF       INT
+ CPU TIMES  *       254.57    242.54     10.87      0.81      0.25
+ REAL TIME  *       255.50 SEC
+ DISK USED  *       615.69 MB
+ **********************************************************************************************************************************
+
+ ACFD/aug-cc-pWCV5Z energy=   -459.476041497267
+
+            ACFD          DF-UHF
+   -459.47604150   -459.48066615
+ **********************************************************************************************************************************
+ Molpro calculation terminated

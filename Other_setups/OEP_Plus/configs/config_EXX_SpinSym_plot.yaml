@@ -1,0 +1,8 @@
+molpro_path: "/home/trushin/Molpro-dev/molpro-swap/bin/"
+partition: "mem256"
+create_runsh: False
+output_dir: "RAW_OUTPUTS/EXX_SpinSym_plot"
+systems: ["B", "C", "N", "O", "F", "Al", "Si", "P", "S", "Cl"]
+calc_type: "EXX"
+symmetry: ["SpinSym"]
+plot: True

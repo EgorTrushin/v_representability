@@ -1,0 +1,9 @@
+molpro_path: "/home/trushin/Molpro-dev/molpro-swap/bin/"
+partition: "mem256"
+create_runsh: True
+output_dir: "RAW_OUTPUTS/KSINV_CAHF"
+systems: ["B", "C", "N", "O", "F", "Al", "Si", "P", "S", "Cl"]
+calc_type: "KSINV"
+reference: "CAHF"
+mb_methods: ["RS2", "CISD", "AQCC"]
+plot: True

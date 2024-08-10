@@ -1,0 +1,17 @@
+basis={
+default,aug-cc-pwCVQZ
+}
+
+symmetry,nosym
+angstrom
+geometry={
+1
+
+B     0.0000000    0.0000000    0.00000000
+}
+
+
+hf 
+{fci; dm,3000.2;core}
+{matrop; export,3000.2,dm.dat,status=rewind,prec=sci}
+

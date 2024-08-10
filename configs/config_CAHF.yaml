@@ -1,0 +1,3 @@
+output_dir: "RAW_OUTPUTS/CAHF"
+systems: ["B", "C", "N", "O", "F", "Al", "Si", "P", "S", "Cl"]
+calc_type: "CAHF"
