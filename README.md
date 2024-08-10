@@ -8,7 +8,7 @@ This repository contains the analysis of data and the preparation of tables and 
 
 ---
 
-Script [gen_inputs.py](https://github.com/EgorTrushin/vrepr-violation/blob/main/gen_inputs.py) creates all input files for Molpro, besides inputs for KS inversion using FCI target densities and other calculations which supplement FCI-based results. The script uses config files from the **configs** directory.
+Script [gen_inputs.py](https://github.com/EgorTrushin/v_representability/gen_inputs.py) creates all input files for Molpro, besides inputs for KS inversion using FCI target densities and other calculations which supplement FCI-based results. The script uses config files from the **configs** directory.
 
 <details>
 <summary>Example for generating inputs</summary>
@@ -24,6 +24,6 @@ Script [gen_inputs.py](https://github.com/EgorTrushin/vrepr-violation/blob/main/
 
 </details>
 
-Notebook [process_raw_outputs.ipynb](https://github.com/EgorTrushin/vrepr-violation/blob/main/process_raw_outputs.ipynb) processes Molpro output files. Processed data are stored in Python-friendly formats. Data inspection is also performed.
+Notebook [process_raw_outputs.ipynb](https://github.com/EgorTrushin/v_representability/blob/main/process_raw_outputs.ipynb) processes Molpro output files. Processed data are stored in Python-friendly formats. Data inspection is also performed.
 
-Notebook [vrepr-violation.ipynb](https://github.com/EgorTrushin/vrepr-violation/blob/main/vrepr-violation.ipynb) generates tables and figures, i.e., provides analytics. [vrepr-violation.html](https://github.com/EgorTrushin/vrepr-violation/blob/main/vrepr-violation.html) contains only output of [vrepr-violation.ipynb](https://github.com/EgorTrushin/vrepr-violation/blob/main/vrepr-violation.ipynb), i.e., cells with codes are absent.
+Notebook [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/blob/main/vrepr-violation.ipynb) generates tables and figures, i.e., provides analytics. [vrepr-violation.html](https://github.com/EgorTrushin/vrepr-violation/blob/main/vrepr-violation.html) contains only output of [vrepr-violation.ipynb](https://github.com/EgorTrushin/v_representability/vrepr-violation.ipynb), i.e., cells with codes are absent.
