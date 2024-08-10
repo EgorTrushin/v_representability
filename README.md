@@ -1,5 +1,13 @@
 ### Violations of the $v$-representability condition underlying Kohn-Sham density-functional theory
 
+This repository contains the analysis of data and the preparation of tables and figures for the following publication:
+
+- E. Trushin, J. Erhard and A. Görling. Violations of the v-representability condition underlying Kohn-Sham density-functional theory - Phys. Rev. A 110 L020802 (2024) https://doi.org/10.1103/PhysRevA.110.L020802
+    - Click to see corresponding [Jupyter Notebook](https://github.com/EgorTrushin/supplementary-materials/blob/main/vrepr_violation/vrepr-violation.ipynb)
+    - Zenodo repository: [http://doi.org/10.5281/zenodo.8226492](http://doi.org/10.5281/zenodo.12772192)
+
+---
+
 Script [gen_inputs.py](https://github.com/EgorTrushin/vrepr-violation/blob/main/gen_inputs.py) creates all input files for Molpro, besides inputs for KS inversion using FCI target densities and other calculations which supplement FCI-based results. The script uses config files from the **configs** directory.
 
 <details>
